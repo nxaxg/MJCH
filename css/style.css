@@ -1,0 +1,538 @@
+/*general*/
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #ebebff;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img, figure{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.container{
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*header*/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(134, 0, 0, 0.8);
+    z-index: 10;
+}
+
+.nav-left{
+    width: 30%;
+    float: left;
+}
+
+.logo{
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.logo a{
+    color: white;
+}
+
+.logo h1{
+    padding: 10px 0 0 0 ;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'coderfreebold';
+    font-weight: bold;
+    font-size: 60px;    
+}
+
+.nav-right{
+    width: 30%;
+    float: left;
+}
+
+.nav-left uL{
+    float: right;
+    margin: 0;
+}
+
+.nav-right ul{
+    float: left;
+    margin: 0;
+}
+
+.nav-left li, .nav-right li{
+    float: left;
+    margin-right: 30px;
+    padding-top: 45px;
+}
+
+.nav-left a, .nav-right a{
+    color: white;
+}
+
+/*banner-home*/
+.banner-home{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-home img{
+    width: 100%;
+    opacity: 0.2;
+}
+
+.banner-home figure{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 600px;
+    height: 100%;
+    background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.banner-home figcaption{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-home figcaption h2{
+    color: white;
+    background-color: rgba(134, 0, 0, 0.4);
+    margin: 0 auto 10px auto;
+    padding: 13px;
+    display: inline;
+    font-family: 'coderfreebold';
+    font-weight: 100;
+    font-size: 31px;
+}
+
+.banner-home figcaption p{
+    width: 50%;
+    clear: both;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto 0 auto;
+    padding: 15x;
+    font-size: 16px;
+}
+
+/*home calltoaction*/
+
+.callToAction{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(134, 0, 0);
+    top: 0;
+}
+
+.callToAction .container{
+    width: 100%;
+}
+
+.callToAction .left, .callToActio .right{
+    padding: 0;
+    margin: 0;
+}
+
+.callToAction .left{
+    width: 60%;
+    float: left;
+    color: white;
+}
+
+.callToAction .right{
+    width: 40%;
+    float: left;
+    padding-top: 12px;
+}
+
+.callToAction .right button{
+    float: right;
+    width: 60%;
+    padding: 5px;
+    background-color: rgb(134,0,0);
+    color: white;
+    border: 1px white solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.callToAction .right button:hover{
+    background-color: white;
+    border: 1px white solid;
+    color: rgb(134,0,0);
+}
+
+/*testimonial*/
+.testimonial{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 200px;
+}
+
+.testimonial .container{
+    width: 100%;
+    clear: both;
+}
+
+.testimonial .left-button{
+    width: 18%;
+    float: left;
+    margin-right: 2%;
+}
+
+.testimonial .left-button button{
+    float: right;
+    margin-top: 30%;
+}
+
+.testimonial-slider{
+    float: left;
+    width: 60%;
+}
+
+.testimonial .right-button{
+    float: left;
+    width: 18%;
+    margin-left: 2%;
+}
+
+.testimonial .right-button button{
+    float: left;
+    margin-top: 30%;
+}
+
+.testimonial-slider div{
+    text-align: center;
+}
+
+.testimonial-slider div p{
+    font-style: italic;
+}
+
+.testimonial-slider div p strong{
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+
+/*elmuseo*/
+.banner-museo{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    clear: both;
+}
+
+.banner-museo figure{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 300px;
+    height: 100%;
+    background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.banner-museo img{
+    width: 100%;
+    opacity: 0.2;
+}
+
+.banner-museo figcaption{
+    width: 100%;    
+    position: absolute;
+    text-align: center;
+    top: 0;
+    margin-top: 18%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-museo figcaption h2{
+    color: white;
+    background-color: rgba(134, 0, 0, 0.4);
+    margin: 0 auto 10px auto;
+    padding: 13px;
+    display: inline;
+    font-family: 'coderfreebold';
+    font-weight: 100;
+    font-size: 31px;
+}
+
+
+/*museo-cont*/
+
+.museo-cont{
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.museo-cont figure{
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: black;
+}
+
+.museo-cont figure:last-child{
+    margin-bottom: 0;
+}
+
+.museo-cont figure img{
+    width: 100%;
+}
+
+.museo-cont figure figcaption{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    background-color: rgba(134,0,0,0.4);
+    color: white;
+    padding: 10px;
+}
+
+.museo-cont figure:hover img{
+    opacity: 0.4;
+}
+
+.museo-cont figure:hover figcaption{
+    background-color: rgb(134,0,0);
+}
+
+/*exposiciones*/
+
+.banner-exposiciones{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    clear: both;
+}
+
+.banner-exposiciones figure{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 300px;
+    height: 100%;
+    background-color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.banner-exposiciones img{
+    width: 100%;
+    opacity: 0.2;
+}
+
+.banner-exposiciones figcaption{
+    width: 100%;    
+    position: absolute;
+    text-align: center;
+    top: 0;
+    margin-top: 18%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-exposiciones figcaption h2{
+    color: white;
+    background-color: rgba(134, 0, 0, 0.4);
+    margin: 0 auto 10px auto;
+    padding: 13px;
+    display: inline;
+    font-family: 'coderfreebold';
+    font-weight: 100;
+    font-size: 31px;
+}
+
+
+/*museo-cont*/
+
+.expo-cont{
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.expo-cont figure{
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: black;
+}
+
+.expo-cont figure:last-child{
+    margin-bottom: 0;
+}
+
+.expo-cont figure img{
+    width: 100%;
+}
+
+.expo-cont figure figcaption{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    background-color: rgba(134,0,0,0.4);
+    color: white;
+    padding: 10px;
+}
+
+.expo-cont figure:hover img{
+    opacity: 0.4;
+}
+
+.expo-cont figure:hover figcaption{
+    background-color: rgb(134,0,0);
+}
+
+/*footer*/
+footer{
+    position: relative;
+    clear: both;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(134,0,0);
+    bottom: 0;
+    height: 120px;
+}
+
+footer .container{
+    padding: 0;
+    margin: 0 auto;
+}
+
+footer .logof{
+    width: 20%;
+    float: left;
+    margin-top: 15px;
+}
+
+footer .logof a{
+    color: white;
+    font-family: 'coderfreebold';
+}
+
+footer .sitemap{
+    width: 55%;
+    float: left;
+    margin-top: 35px; 
+}
+
+footer .sitemap ul{
+    float: left;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+footer .sitemap li{
+    float: left;
+    padding: 0 10px 0 10px;
+    border-left: 1px white solid;
+}
+
+footer .sitemap li:last-child{
+    margin-right: 0;
+    border-right: 1px white solid;
+}
+
+footer .credits{
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: auto;
+}
+
+footer .rs{
+    margin: 0;
+    width: 100%;
+    padding: 15px;
+    clear: both;
+    text-align: center;
+}
+
+footer .rs ul{
+    width: 50%;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+
+footer .rs li{
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border: 1px white solid;
+    border-radius: 20px;
+}
+
+footer .copyright{
+    width: 100%;
+    padding-top: 5px;
+    color: white;
+    clear: both;
+}
