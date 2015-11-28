@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Museo del Juguete Chileno</title>
     <link rel="stylesheet" href="css/style.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--Scripts-->
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/script.js"></script>
     <!--Box slider-->
     <!--Fonts-->
-    <link rel="stylesheet" href="fonts/4th-february/stylesheet.css">
     <link rel="stylesheet" href="fonts/4th-february/stylesheet.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
                     </ul>
                 </nav>
                 <div class="logo">
-                    <a href="index.html"><h1>mjch</h1></a>
+                    <a href="index.html"><img src="img/logo1-white.png" alt="Logo principal"></a>
                 </div>
                 <nav class="nav-right">
                     <ul>
@@ -39,46 +41,54 @@
 
                     <figcaption>
                         <h2>Bienvenido al Museo del Juguete Chileno</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorum temporibus, quasi esse earum sequi illum, voluptatem vero ex iure saepe aliquam voluptatibus blanditiis eos excepturi beatae, cum laboriosam? Tempora.</p>
+                        <p>El museo tiene como objetivo mostrar y comentar estas piezas patrimoniales fabricadas en el país, y forman parte de la colección e investigación que pretenden en algún momento consolidarse como un museo permanente.</p>
+                        <div class="btn-rs">
+                            <a href="#"><i class="fa fa-facebook-square"></i> /MuseoDelJugueteChileno</a>
+                            <a href="#"><i class="fa fa-twitter-square"></i> @MuseoDelJugueteChileno</a>
+                        </div>
                     </figcaption>
                 </figure>
+                
         </section>
+        
         <section class="callToAction">
             <div class="container">
-                <div class="left">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="cta-left">
+                    <p>Conoce más sobre nosotros y el juguete Chileno.</p>
                 </div>
-                <div class="right">
-                    <button onclick="location.href='elmuseo.html'">Ver más ></button>
+                <div class="cta-right">
+                    <a href="elmuseo.html">Ver más <span class="ang-right fa fa-angle-right"></span></a>
                 </div>
             </div>
         </section>
         
-        <section class="testimonial">
+        <section class="prensa">
            
             <div class="container">
+                
+                <h2 class="subtitle">Prensa</h2>
                
                 <div class="left-button">
-                    <button>left</button>
+                    <i class="fa fa-angle-left"></i>
                 </div>
                 
                 <div class="testimonial-slider">
                     <div class="slide1">
-                        <h3>1Revista Paula</h3>
-                        <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quidem voluptatem esse provident harum ea facilis. Neque unde ab exercitationem nemo inventore culpa illo alias ex ipsa voluptatum. Reprehenderit, earum. <strong>"</strong></p>
+                        <p><strong>"</strong>Antiguos camiones de madera, motos metálicas diseñadas en los años 60, soldaditos con más de tres décadas y hasta un muñeco de casi un siglo. <strong>"</strong></p>
+                        <p class="foottitle"><a href="#">La Tercera. 09 Diciembre 2010.</a></p>
                     </div>
                     <div class="slide2">
-                            <h3>2La Tercera</h3>
-                            <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ad sed obcaecati nemo ab ipsum praesentium modi asperiores vitae ea id, quaerat, reiciendis labore cumque eveniet optio, aut totam qui! <strong>"</strong></p>
+                            <p><strong>"</strong>El juguete antiguo es un objeto arqueológico, un testimonio patrimonial de la sociedad. Se trata del reflejo de la vida de ayer, pero en miniatura.<strong>"</strong></p>
+                            <p class="foottitle"><a href="#">Revista Paula. 07 Mayo 2014.</a></p>
                     </div>
                     <div class="slide3">
-                            <h3>3El Dinamo</h3>
-                            <p><strong>"</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, quidem voluptatem esse provident harum ea facilis. Neque unde ab exercitationem nemo inventore culpa illo alias ex ipsa voluptatum. Reprehenderit, earum. <strong>"</strong></p>
+                            <p><strong>"</strong>El juguete, más allá de un objeto decorativo, pasa a ser un objeto de carga emocional, y como testimonio de nuestra sociedad se convierte en un producto de la arqueología industrial o sociológica del país.<strong>"</strong></p>
+                            <p class="foottitle"><a href="#">El Mostrador. 02 Abril 2014.</a></p>
                     </div>
                 </div>
                 
                 <div class="right-button">
-                    <button>right</button>
+                    <i class="fa fa-angle-right"></i>
                 </div>
                 
             </div>
@@ -88,23 +98,21 @@
         <footer>
             <div class="container">
                 <div class="logof">
-                    <a href="index.html"><h3>Museo del Juguete Chileno</h3></a>
+                    <a href="index.html"><img src="img/logo2-white.png" alt="Logo 2"></a>
                 </div>
                 <div class="sitemap">
-                    <nav>
                         <ul>
                             <li><a href="elmuseo.html">El museo</a></li>
-                        <li><a href="galeria.html">Galeria</a></li>
+                            <li><a href="galeria.html">Galeria</a></li>
                             <li><a href="exposiciones.html">Exposiciones</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
-                    </nav>
                 </div>
                 <div class="credits">
                     <div class="rs">
                     <ul>
-                        <li>F</li>
-                        <li>T</li>
+                        <li class="fa fa-twitter"></li>
+                        <li class="fa fa-facebook"></li>
                     </ul>
                 </div>
                 <div class="copyright">

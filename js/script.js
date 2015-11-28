@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('.testimonial-slider .slide3').hide();
     var hide1 = false;
     
-    $('.right-button button').click(function(){
+    $('.right-button i').click(function(){
        if(hide2 && hide3){
            $('.testimonial-slider .slide1').hide();
            hide1 = true;
@@ -24,7 +24,7 @@ $(document).ready(function () {
        }
     });
     
-    $('.left-button button').click(function(){
+    $('.left-button i').click(function(){
        if(hide2 && hide3){
            $('.testimonial-slider .slide1').hide();
            hide1 = true;
