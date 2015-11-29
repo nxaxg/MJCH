@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Helvetica', sans-serif;
-    background-color: #ebebff;
+    background-color: #ebebeb;
 }
 
 a{
@@ -39,6 +39,12 @@ img, figure{
     width: 100%;
     margin: 0 auto;
     padding: 0;
+}
+
+.sel{
+    border-bottom: 2px white solid;
+    padding-bottom: 34px;
+    opacity: 1;
 }
 
 /*header*/
@@ -89,6 +95,12 @@ header{
 }
 
 .nav-left a, .nav-right a{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+nav .sel{
+    border-bottom: 2px white solid;
+    padding-bottom: 34px;
     color: white;
 }
 
@@ -312,7 +324,7 @@ header{
 }
 
 /*elmuseo*/
-.banner-museo{
+.banner-int{
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -321,33 +333,33 @@ header{
     clear: both;
 }
 
-.banner-museo figure{
+.banner-int figure{
     position: relative;
     width: 100%;
     overflow: hidden;
-    max-height: 300px;
+    max-height: 350px;
     height: 100%;
     background-color: black;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
-.banner-museo img{
+.banner-int img{
     width: 100%;
     opacity: 0.2;
 }
 
-.banner-museo figcaption{
+.banner-int figcaption{
     width: 100%;    
     position: absolute;
     text-align: center;
-    top: 0;
-    margin-top: 18%;
+    bottom: 0;
+    margin-bottom: 2%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.banner-museo figcaption h2{
+.banner-int figcaption h2{
     color: white;
     background-color: rgba(134, 0, 0, 0.4);
     margin: 0 auto 10px auto;
@@ -358,10 +370,66 @@ header{
     font-size: 31px;
 }
 
+/*bajada*/
 
+.bajada{
+    width: 100%;
+    position: relative;
+    clear: both;
+    padding: 20px 0 20px 0;
+}
+
+.bajada .container{
+    text-align: center;
+}
+
+.bajada .hr1, .bajada .hr2{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*bajada-galería*/
+
+.bajada ul{
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.bajada li{
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.bajada li a{
+    color: rgb(134,0,0);
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px rgb(134,0,0) solid;
+}
+
+.bajada li a:hover{
+    border: 1px rgb(134,0,0) solid;
+    background-color: rgb(134,0,0);
+    color: white;
+}
+
+.bajada li a:last-child{
+    margin: 0;
+}
+
+.bajada .btn-sel{
+    border: 1px rgb(134,0,0) solid;
+    background-color: rgb(134,0,0);
+    color: white;
+}
 /*museo-cont*/
 
-.museo-cont{
+.links-box{
     width: 100%;
     position: relative;
     clear: both;
@@ -370,7 +438,7 @@ header{
     padding-bottom: 30px;
 }
 
-.museo-cont figure{
+.links-box figure{
     margin: 0 auto;
     width: 90%;
     height: 200px;
@@ -380,15 +448,15 @@ header{
     background-color: black;
 }
 
-.museo-cont figure:last-child{
+.links-box figure:last-child{
     margin-bottom: 0;
 }
 
-.museo-cont figure img{
+.links-box figure img{
     width: 100%;
 }
 
-.museo-cont figure figcaption{
+.links-box figure figcaption{
     position: absolute;
     bottom: 0;
     margin-bottom: 2%;
@@ -398,12 +466,57 @@ header{
     padding: 10px;
 }
 
-.museo-cont figure:hover img{
+.links-box figure:hover img{
     opacity: 0.4;
 }
 
-.museo-cont figure:hover figcaption{
+.links-box figure:hover figcaption{
     background-color: rgb(134,0,0);
+}
+
+/*image set*/
+
+.imageset{
+    position: relative;
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding: 20px 0 20px 0;
+}
+
+.imageset .juguetes-madera{
+    position: relative;
+    clear: both;
+}
+
+.imageset figure{
+    width: 25%;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.imageset img{
+    width: 100%;
+    height: 200px;
+}
+
+.imageset figcaption{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(134,0,0, 0.6);
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.imageset figure:hover figcaption{
+    display: inherit;
 }
 
 /*historia*/

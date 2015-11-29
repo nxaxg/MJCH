@@ -43,6 +43,50 @@ $(document).ready(function () {
        }
     });
 
-
-
+        var plastico = false;
+        var metal = false;
+        var madera = true;
+        $('.juguetes-madera').show();
+        $('.juguetes-metal').hide();
+        $('.juguetes-plastico').hide();
+    
+    
+        $('#btn-metal').click(function(e){
+            e.preventDefault();
+            metal = true;
+            madera = false;
+            plastico = false;
+            $('.juguetes-plastico').hide();
+            $('.juguetes-madera').hide();
+            $('.juguetes-metal').fadeIn('slow');
+            $('#btn-madera').removeClass();
+            $('#btn-plastico').removeClass();
+            $('#btn-metal').addClass('btn-sel');
+        });
+    
+        $('#btn-madera').click(function(e){
+            e.preventDefault();
+            metal = false;
+            madera = true;
+            plastico = false;
+            $('.juguetes-madera').fadeIn('slow');
+            $('.juguetes-metal').hide();
+            $('.juguetes-plastico').hide();
+            $('#btn-metal').removeClass();
+            $('#btn-plastico').removeClass();
+            $('#btn-madera').addClass('btn-sel');
+        });
+    
+        $('#btn-plastico').click(function(e){
+            e.preventDefault();
+            metal = false;
+            madera = false;
+            plastico = true;
+            $('.juguetes-plastico').fadeIn('slow');
+            $('.juguetes-metal').hide();
+            $('.juguetes-madera').hide();
+            $('#btn-madera').removeClass();
+            $('#btn-metal').removeClass();
+            $('#btn-plastico').addClass('btn-sel');
+        });
 });
