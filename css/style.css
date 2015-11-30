@@ -273,7 +273,7 @@ nav .sel{
 .prensa{
     width: 50%;
     float: left;
-    border-right: 1px gray solid;
+    border-right: 1px rgba(128, 128, 128, 0.38) solid;
 }
 
 .calendario{
@@ -289,24 +289,22 @@ nav .sel{
 }
 
 .calendario .fechas{
-    width: 70%;
+    width: 90%;
     position: relative;
-    padding: 0 20px 0 20px;
+    padding: 10px 20px 0 20px;
     margin: 0 auto;
 }
 
-.fecha1{
-    position: relative;
-    padding: 0;
-    border-bottom: 1px black solid;
-    margin: 0;
+.calendario .fechas p{
+    height: auto;
+    padding: 0 0 20px 0;
 }
-
-
 
 .calendario .fechas .date{
     width: 20%;
     float: left;
+    font-weight: bold;
+    color: rgb(134,0,0);
 }
 
 .calendario .fechas .venue{
@@ -317,6 +315,19 @@ nav .sel{
 .calendario .fechas .btn-more{
     width: 20%;
     float: left;
+}
+
+.calendario .btn-more a{
+    background-color: rgb(134,0,0);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;    
+}
+
+.calendario .btn-more a:hover{
+    border: 1px rgb(134,0,0) solid;
+    background-color: #ebebeb;
+    color: rgb(134,0,0);
 }
 
 
@@ -331,11 +342,17 @@ nav .sel{
     margin-top: 15%;
     font-size: 60px;
     cursor: pointer;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.prensa .left-button i:hover{
+    color: black;
 }
 
 .testimonial-slider{
     float: left;
     width: 76%;
+    height: 180px;
 }
 
 .prensa .right-button{
@@ -349,6 +366,11 @@ nav .sel{
     margin-top: 15%;
     font-size: 60px;
     cursor: pointer;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+.prensa .right-button i:hover{
+    color: black;
 }
 
 .testimonial-slider div{
