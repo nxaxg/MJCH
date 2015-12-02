@@ -43,7 +43,7 @@ img, figure{
 
 .sel{
     border-bottom: 2px white solid;
-    padding-bottom: 34px;
+    padding-bottom: 30px;
     opacity: 1;
 }
 
@@ -57,13 +57,18 @@ header{
     z-index: 10;
 }
 
+header nav a{
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
 .nav-left{
-    width: 30%;
+    width: 35%;
     float: left;
 }
 
 .logo{
-    width: 40%;
+    width: 30%;
     float: left;
     text-align: center;
 }
@@ -71,10 +76,15 @@ header{
 .logo img{
     margin-top: 5px;
     height: 90px;
+    opacity: 0.8;
+}
+
+.logo img:hover{
+    opacity: 1;
 }
 
 .nav-right{
-    width: 30%;
+    width: 35%;
     float: left;
 }
 
@@ -90,7 +100,7 @@ header{
 
 .nav-left li, .nav-right li{
     float: left;
-    margin-right: 30px;
+    margin-right: 40px;
     padding-top: 45px;
 }
 
@@ -98,9 +108,13 @@ header{
     color: rgba(255, 255, 255, 0.6);
 }
 
+nav a:hover{
+    color: white;
+}
+
 nav .sel{
-    border-bottom: 2px white solid;
-    padding-bottom: 34px;
+    border-bottom: 3px white solid;
+    padding-bottom: 33px;
     color: white;
 }
 
@@ -192,7 +206,7 @@ nav .sel{
 .callToAction{
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 60px;
     margin: 0;
     padding: 0;
     background-color: rgb(134, 0, 0);
@@ -291,7 +305,7 @@ nav .sel{
 .calendario .fechas{
     width: 90%;
     position: relative;
-    padding: 10px 20px 0 20px;
+    padding: 10px 10px 0 10px;
     margin: 0 auto;
 }
 
@@ -535,6 +549,8 @@ nav .sel{
     background-color: rgba(134,0,0,0.4);
     color: white;
     padding: 10px;
+    font-family: 'coderfreebold';
+    font-size: 20px;
 }
 
 .links-box figure:hover img{
@@ -570,7 +586,7 @@ nav .sel{
 
 .imageset img{
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 .imageset figcaption{
@@ -590,162 +606,52 @@ nav .sel{
     display: inherit;
 }
 
-/*historia*/
-.banner-museo-int{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    clear: both;
-}
+/*article*/
 
-.banner-museo-int figure{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    max-height: 320px;
-    height: 100%;
-    background-color: black;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.banner-museo-int img{
-    width: 100%;
-    opacity: 0.2;
-}
-
-.banner-museo-int figcaption{
-    width: 100%;    
-    position: absolute;
-    text-align: center;
-    top: 0;
-    margin-top: 18%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.banner-museo-int figcaption h2{
-    color: white;
-    background-color: rgba(134, 0, 0, 0.4);
-    margin: 0 auto 10px auto;
-    padding: 13px;
-    display: inline;
-    font-family: 'coderfreebold';
-    font-weight: 100;
-    font-size: 31px;
-}
-
-/*contenedor*/
-
-
-/*exposiciones*/
-
-.banner-exposiciones{
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    clear: both;
-}
-
-.banner-exposiciones figure{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    max-height: 300px;
-    height: 100%;
-    background-color: black;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.banner-exposiciones img{
-    width: 100%;
-    opacity: 0.2;
-}
-
-.banner-exposiciones figcaption{
-    width: 100%;    
-    position: absolute;
-    text-align: center;
-    top: 0;
-    margin-top: 18%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.banner-exposiciones figcaption h2{
-    color: white;
-    background-color: rgba(134, 0, 0, 0.4);
-    margin: 0 auto 10px auto;
-    padding: 13px;
-    display: inline;
-    font-family: 'coderfreebold';
-    font-weight: 100;
-    font-size: 31px;
-}
-
-/*museo-int-cont*/
-
-.museo-int-cont{
-    width: 100%;
-    position: relative;
-    clear: both;
-    margin: 0 auto;
+.article{
     padding-top: 30px;
     padding-bottom: 30px;
+    position: relative;
 }
 
-/*museo-cont*/
-
-.expo-cont{
-    width: 100%;
-    position: relative;
+blockquote{
+    padding: 4px;
+    background-color: #e3e3e3;
+    text-align: center;
     clear: both;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
-.expo-cont figure{
-    margin: 0 auto;
-    width: 90%;
-    height: 200px;
+/*****/
+.imagese .popup{
+    width: 25%;
     overflow: hidden;
-    margin-bottom: 20px;
+    float: left;
     position: relative;
-    background-color: black;
+    padding-bottom: 50px;
 }
 
-.expo-cont figure:last-child{
-    margin-bottom: 0;
-}
-
-.expo-cont figure img{
+.imagese img{
     width: 100%;
+    height: auto;
 }
 
-.expo-cont figure figcaption{
+.imagese .popup figcaption{
     position: absolute;
     bottom: 0;
-    margin-bottom: 2%;
-    margin-left: 5%;
-    background-color: rgba(134,0,0,0.4);
+    padding-bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(134,0,0, 0.6);
     color: white;
-    padding: 10px;
+    display: none;
+    cursor: pointer;
 }
 
-.expo-cont figure:hover img{
-    opacity: 0.4;
+.imagese figure:hover figcaption{
+    display: inherit;
 }
-
-.expo-cont figure:hover figcaption{
-    background-color: rgb(134,0,0);
-}
-
+    
 /*FOOTER*/
 
 footer{

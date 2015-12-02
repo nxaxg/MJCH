@@ -89,4 +89,11 @@ $(document).ready(function () {
             $('#btn-metal').removeClass();
             $('#btn-plastico').addClass('btn-sel');
         });
+    
+    
+        //MAgnific Popup
+        $('.poplink').magnificPopup({
+            type:'image',
+            image: {verticalFit: true}
+        });
 });
