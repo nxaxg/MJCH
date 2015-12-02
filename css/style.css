@@ -146,8 +146,8 @@ nav .sel{
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 0;
-    margin-top: 20%;
+    bottom: 0;
+    margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -180,27 +180,29 @@ nav .sel{
 }
 
 .banner-home .btn-rs a{
-    border-radius: 5px;
     padding: 5px;
-    background-color: rgba(134,0,0,0.4);
-    color: rgba(253, 253, 253, 0.8);
 }
 
-.banner-home .btn-rs a:hover{
-    background-color: rgba(134,0,0,0);
+#fcbk{
+    float: left;
+    font-size: 18px;
+    font-weight: 100;
+    background-color: rgba(6, 0, 160, 0.2);
+    color: white;
+}
+
+#twtr{
+    float: right;
+    font-size: 18px;
+    background-color: rgba(0, 102, 190, 0.2);
+    color: white;
+}
+
+
+#fcbk:hover, #twtr:hover{
+    background-color: rgba(0,0,0,0);
     color: rgba(253, 253, 253, 1);
 }
-
-.banner-home .btn-rs a:first-child{
-    float: left;
-    font-size: 20px;
-}
-
-.banner-home .btn-rs a:last-child{
-    float: right;
-    font-size: 20px;
-}
-
 /*home calltoaction*/
 
 .callToAction{
@@ -391,11 +393,6 @@ nav .sel{
     text-align: center;
 }
 
-.testimonial-slider div p{
-    font-style: italic;
-}
-
-
 .testimonial-slider div p strong{
     font-size: 20px;
     margin: 5px 0 0 0;
@@ -576,12 +573,17 @@ nav .sel{
     clear: both;
 }
 
-.imageset figure{
+.imageset .popup{
     width: 25%;
     overflow: hidden;
     float: left;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 5%;
+}
+
+.imageset figure{
+    width: auto;
+    height: auto;
 }
 
 .imageset img{
@@ -589,20 +591,31 @@ nav .sel{
     height: auto;
 }
 
-.imageset figcaption{
+.imageset figure figcaption{
     position: absolute;
-    bottom: 0;
+    bottom: 18%;
     padding-bottom: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: rgba(134,0,0, 0.6);
+    background-color: rgba(134,0,0, 0.8);
     color: white;
     display: none;
     cursor: pointer;
 }
 
-.imageset figure:hover figcaption{
+.imageset figcaption p:first-child{
+    padding-top: 50%;
+}
+
+.imageset figcaption p:last-child{
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px white solid;
+}
+
+.imageset .popup:hover figcaption{
     display: inherit;
 }
 
@@ -612,6 +625,19 @@ nav .sel{
     padding-top: 30px;
     padding-bottom: 30px;
     position: relative;
+    width: 100%;
+}
+
+.article figure{
+    width: 60%;
+    margin: 0 auto;
+    max-height: auto;
+    overflow: hidden;
+}
+
+.article img{
+    padding-top: 20px;    
+    width: 100%;
 }
 
 blockquote{
@@ -622,35 +648,7 @@ blockquote{
 }
 
 /*****/
-.imagese .popup{
-    width: 25%;
-    overflow: hidden;
-    float: left;
-    position: relative;
-    padding-bottom: 50px;
-}
 
-.imagese img{
-    width: 100%;
-    height: auto;
-}
-
-.imagese .popup figcaption{
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: rgba(134,0,0, 0.6);
-    color: white;
-    display: none;
-    cursor: pointer;
-}
-
-.imagese figure:hover figcaption{
-    display: inherit;
-}
     
 /*FOOTER*/
 
