@@ -128,7 +128,7 @@ nav .sel{
 
 .banner-home img{
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 .banner-home figure{
@@ -615,8 +615,8 @@ nav .sel{
     border: 1px white solid;
 }
 
-.imageset .popup:hover figcaption{
-    display: inherit;
+.popup:hover figcaption{
+    display: block;
 }
 
 /*article*/
@@ -645,6 +645,51 @@ blockquote{
     background-color: #e3e3e3;
     text-align: center;
     clear: both;
+}
+
+/*FORMULARIO*/
+.formulario{
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+.formulario{
+    padding-bottom: 30px;
+}
+
+.formulario .form-contacto{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #d1d1d1;
+    border: 1px red solid;
+}
+
+.form-contacto #nombre{
+    width: 42%;
+    margin: 10px 3% 10px 5%;
+    float: left;
+    padding: 5px;
+}
+
+.form-contacto #mail{
+    width: 42%;
+    margin: 10px 5% 10px 3%;
+    float: left;
+    padding: 5px;
+}
+
+.form-contacto #asunto{
+    width: 90%;
+    margin: 10px 5% 10px 5%;
+    padding: 5px;
+    clear: both;
+}
+
+.form-contacto #mensaje{
+    width: 90%;
+    margin: 10px 5% 10px 5%;
+    font-family: 'Helvetica';
 }
 
 /*****/
