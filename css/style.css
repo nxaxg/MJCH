@@ -187,15 +187,28 @@ nav .sel{
     float: left;
     font-size: 18px;
     font-weight: 100;
-    background-color: rgba(6, 0, 160, 0.2);
     color: white;
+    opacity: 0.8;
+}
+
+#fcbk:hover{
+    color: white;
+    opacity: 1;
+    text-decoration: underline;
 }
 
 #twtr{
     float: right;
     font-size: 18px;
-    background-color: rgba(0, 102, 190, 0.2);
+    font-weight: 100;
     color: white;
+    opacity: 0.8;
+}
+
+#twtr:hover{
+    color: white;
+    opacity: 1;
+    text-decoration: underline;
 }
 
 
@@ -428,7 +441,7 @@ nav .sel{
 
 .banner-int img{
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.3;
 }
 
 .banner-int figcaption{
@@ -640,6 +653,22 @@ nav .sel{
     width: 100%;
 }
 
+.article h3{
+    padding-left: 50px;
+    margin-top: 40px;
+}
+
+.article h3:first-child{
+    margin: 0;
+}
+
+.article cite{
+    padding-top: 50px;
+    float: right;
+    padding-bottom: 20px;
+    color: #3e3e3e;
+}
+
 blockquote{
     padding: 4px;
     background-color: #e3e3e3;
@@ -662,7 +691,8 @@ blockquote{
     width: 70%;
     margin: 0 auto;
     background-color: #d1d1d1;
-    border: 1px red solid;
+    text-align: center;
+    padding: 10px;
 }
 
 .form-contacto #nombre{
@@ -690,6 +720,26 @@ blockquote{
     width: 90%;
     margin: 10px 5% 10px 5%;
     font-family: 'Helvetica';
+}
+
+.form-contacto button{
+    font-family: 'coderfreebold';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 30%;
+    margin: 15px auto 15px auto;
+    background-color: rgb(134,0,0);
+    color: white;
+    border: 1px rgb(134,0,0) solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.form-contacto button:hover{
+    border: 1px rgb(134,0,0) solid;
+    background-color: #d1d1d1;
+    color: rgb(134,0,0);
 }
 
 /*****/
