@@ -834,10 +834,10 @@ footer .rs li{
     margin-left: 0;
     margin-right: 5px;
     color: white;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 18px 10px 18px;
     border: 1px white solid;
-    border-radius: 20px;
     cursor: pointer;
+    width: 40%;
 }
 
 footer .rs li:first-child{
